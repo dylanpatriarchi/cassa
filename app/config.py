@@ -2,5 +2,5 @@ DATABASE_CONFIG = {
     'host': 'localhost',
     'user': 'root',
     'password': '',
-    'database': 'cassa'
+    'database': 'cassa_db'
 }
