@@ -17,9 +17,12 @@ class CartManager:
         total = sum(p['prezzo'] for p in self.cart)
         print(f"Carrello: {[p['nome'] for p in self.cart]}")
         print(f"Totale: €{total}")
-        user_input = input("Premi 'q' per stampare lo scontrino o qualsiasi altro tasto per continuare: ")
+        user_input = input("Premi 'q' per stampare lo scontrino, 'r' per rimuovere il prodotto o qualsiasi altro tasto per continuare: ")
         if user_input.lower() == 'q':
             self.print_receipt()
+        elif user_input.lower() = 'r':
+            self.cart.remove_product(self, p['id'])
+
 
     def print_receipt(self):
         filename = "scontrino.pdf"
