@@ -20,8 +20,6 @@ class CartManager:
         user_input = input("Premi 'q' per stampare lo scontrino, 'r' per rimuovere il prodotto o qualsiasi altro tasto per continuare: ")
         if user_input.lower() == 'q':
             self.print_receipt()
-        elif user_input.lower() = 'r':
-            self.cart.remove_product(self, p['id'])
 
 
     def print_receipt(self):
